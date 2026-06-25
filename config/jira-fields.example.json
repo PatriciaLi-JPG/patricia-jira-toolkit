@@ -1,0 +1,9 @@
+{
+  "jiraBaseUrl": "https://jira.example.com",
+  "teamFieldJql": "cf[17553]",
+  "storyPointsField": "customfield_10422",
+  "devEstimateField": "customfield_25757",
+  "qaEstimateField": "customfield_25958",
+  "productionField": "customfield_10570"
+}
+

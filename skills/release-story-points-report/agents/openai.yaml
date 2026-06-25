@@ -1,0 +1,8 @@
+interface:
+  display_name: "Release Story Points Report"
+  short_description: "Jira release SP, effort, embed bug, and team report"
+  brand_color: "#F97316"
+  default_prompt: "Use $release-story-points-report to summarize release 26.1.30 for Phone/Jupiter/mThor teams."
+
+policy:
+  allow_implicit_invocation: true

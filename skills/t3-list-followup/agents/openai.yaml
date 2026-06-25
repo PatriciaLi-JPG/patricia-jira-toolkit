@@ -1,0 +1,3 @@
+display_name: T3 List followup
+short_description: Find T3/Jira tickets that need follow-up.
+default_prompt: Find T3/Jira tickets that need follow-up and draft a concise update message.

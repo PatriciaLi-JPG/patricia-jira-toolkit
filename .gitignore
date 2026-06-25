@@ -1,0 +1,12 @@
+.env
+*.local.json
+*.local.yml
+*.local.yaml
+out/
+outputs/
+*.log
+node_modules/
+__pycache__/
+.DS_Store
+Thumbs.db
+

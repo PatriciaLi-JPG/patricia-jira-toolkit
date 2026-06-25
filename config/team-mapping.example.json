@@ -1,0 +1,20 @@
+{
+  "teams": [
+    {
+      "alias": "Jupiter Titan",
+      "project": "FIJI",
+      "teamJql": "cf[17553] = \"Phone-J-Titan-XMN\""
+    },
+    {
+      "alias": "mThor Ping&Pong",
+      "project": "MTR",
+      "teamJql": "cf[17553] in (\"Phone-M-Ping-XMN\", \"Phone-M-Pong-XMN\")"
+    },
+    {
+      "alias": "VoIP",
+      "project": "FIJI,MTR",
+      "teamJql": "cf[17553] = \"XMN-VoIP\""
+    }
+  ]
+}
+
