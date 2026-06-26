@@ -18,7 +18,7 @@ Play the latest published version here:
 
 Source code:
 
-[https://github.com/PatriciaLi-JPG/sm-codex-toolkit/tree/codex/add-orbit-sudoku-example/examples/orbit-sudoku](https://github.com/PatriciaLi-JPG/sm-codex-toolkit/tree/codex/add-orbit-sudoku-example/examples/orbit-sudoku)
+[https://github.com/PatriciaLi-JPG/sm-codex-toolkit/tree/master/examples/orbit-sudoku](https://github.com/PatriciaLi-JPG/sm-codex-toolkit/tree/master/examples/orbit-sudoku)
 
 ## Game Description
 

@@ -10,7 +10,7 @@ Shared Codex skills, templates, and setup notes for Scrum Master / TPM Jira work
 - `templates/`: paste-ready weekly summary, release health, and follow-up message formats.
 - `docs/`: setup, Jira auth, and sharing safety notes.
 - `mcp/`: MCP setup notes and sample config placeholders.
-- `examples/orbit-sudoku`: a small Vite/React game remix that demonstrates a complete Codex coding loop with tests.
+- `examples/orbit-sudoku`: a small Vite/React game remix that demonstrates a complete Codex coding loop with tests. Play link: https://patriciali-jpg.github.io/sm-codex-toolkit/
 
 ## Quick Start
 
