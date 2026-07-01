@@ -27,6 +27,18 @@ This public skill is intentionally team-neutral. Before using it for live Jira w
 
 If any of these are missing, do not guess. Produce a dry-run with assumptions or ask for the smallest missing input.
 
+Recommended first-time setup:
+
+1. Copy `references/quarterly-init-config.example.json` to `references/quarterly-init.local.json`.
+2. Fill in Jira base URL, editable projects, in-scope teams, owner fallbacks, and quarter date windows.
+3. Start with a read-only or dry-run prompt such as:
+
+```text
+JIRA Quarter Planning for 2026Q3 from INIT-12345, dry-run only. Use my local quarterly-init config.
+```
+
+Do not perform live Jira writes until the dry-run operation list includes current values, proposed values, ownership evidence, and skipped/conflict items.
+
 ## Workflow
 
 1. Confirm or infer the target quarter, project key, and output mode.
@@ -209,7 +221,7 @@ Apply these gates before any live Jira update. Prefer fixing fewer fields correc
 Use the read-only scanner when the user asks whether a quarter INIT and its Epics follow the configured rules:
 
 ```bash
-python scripts/scan_jira_init_compliance.py --init INIT-67890 --quarter 2026Q3 --base-url "$JIRA_BASE_URL" --output-dir ./out
+python scripts/scan_jira_init_compliance.py --init INIT-67890 --quarter 2026Q3 --base-url "$JIRA_BASE_URL" --scope-keyword Planning --in-scope-team Team-A --ignored-project EXT --output-dir ./out
 ```
 
 The scanner must not modify Jira. It checks:

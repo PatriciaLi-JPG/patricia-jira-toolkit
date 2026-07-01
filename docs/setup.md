@@ -33,6 +33,10 @@ Suggested local-only files:
 - `config/sources.local.json`
 - `config/quarterly-init.local.json`
 
+For `jira-quarterly-init`, you can also keep the config beside the installed skill:
+
+- `$env:USERPROFILE\.codex\skills\jira-quarterly-init\references\quarterly-init.local.json`
+
 ## Verify
 
 Ask Codex:
