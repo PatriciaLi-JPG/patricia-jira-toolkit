@@ -36,14 +36,14 @@ Shared Codex skills, templates, and setup notes for Scrum Master / TPM Jira work
    ```
 
    ```text
-   T3 List followup for FIJI-12345, MTR-67890
+   T3 List followup for PROJ-12345, PROJ-67890
    ```
 
    ```text
    JIRA Quarter Planning for 2026Q3, dry-run only
    ```
 
-   For quarterly INIT work, start with [docs/jira-quarterly-init.md](docs/jira-quarterly-init.md). That workflow needs a local team config before any live Jira updates.
+   For quarterly INIT work, start with [docs/jira-quarterly-init.md](docs/jira-quarterly-init.md). First-time users can run a dry-run by pasting Jira URL, source INIT, quarter, in-scope teams, and editable projects directly into the prompt. A local config is recommended before live Jira updates.
 
 ## Sharing Rules
 

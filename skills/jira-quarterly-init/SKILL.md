@@ -27,11 +27,25 @@ This public skill is intentionally team-neutral. Before using it for live Jira w
 
 If any of these are missing, do not guess. Produce a dry-run with assumptions or ask for the smallest missing input.
 
+For a first-time dry-run, accept the same values directly in the user's prompt. Do not require a JSON config file before producing a useful preview. The minimum prompt-provided inputs are:
+
+- Jira base URL.
+- Target quarter.
+- Source template INIT or target INIT to scan.
+- Editable projects.
+- In-scope teams.
+- External projects to ignore.
+- Quarter target date window.
+
+If owner fallback, Fix Version mapping, Sprint mapping, or DEV/QA estimate policy is missing, list those as assumptions or follow-up items instead of blocking the first dry-run.
+
 Recommended first-time setup:
 
-1. Copy `references/quarterly-init-config.example.json` to `references/quarterly-init.local.json`.
-2. Fill in Jira base URL, editable projects, in-scope teams, owner fallbacks, and quarter date windows.
-3. Start with a read-only or dry-run prompt such as:
+1. Run a prompt-only dry-run first.
+2. If the same team will reuse the skill, copy `references/quarterly-init-config.example.json` to `references/quarterly-init.local.json`.
+3. Fill in Jira base URL, editable projects, in-scope teams, external projects, and quarter date windows.
+4. Use `references/quarterly-init-config-guide.md` if the user needs a shorter field-by-field guide.
+5. Start with a read-only or dry-run prompt such as:
 
 ```text
 JIRA Quarter Planning for 2026Q3 from INIT-12345, dry-run only. Use my local quarterly-init config.
