@@ -6,6 +6,7 @@ Shared Codex skills, templates, and setup notes for Scrum Master / TPM Jira work
 
 - `skills/release-story-points-report`: release-level Jira SP, effort, bug ratio, active issue, and missing estimate reporting.
 - `skills/t3-list-followup`: stale Jira ticket review and send-ready follow-up drafts.
+- `skills/jira-quarterly-init`: generic quarterly INIT/Epic planning, cloning, and hygiene safety rules.
 - `config/*.example.json`: sample team, Jira field, and source configuration.
 - `templates/`: paste-ready weekly summary, release health, and follow-up message formats.
 - `docs/`: setup, Jira auth, and sharing safety notes.
@@ -20,6 +21,7 @@ Shared Codex skills, templates, and setup notes for Scrum Master / TPM Jira work
    ```powershell
    Copy-Item -Recurse .\skills\release-story-points-report $env:USERPROFILE\.codex\skills\
    Copy-Item -Recurse .\skills\t3-list-followup $env:USERPROFILE\.codex\skills\
+   Copy-Item -Recurse .\skills\jira-quarterly-init $env:USERPROFILE\.codex\skills\
    ```
 
 3. Configure Jira access for your local session:
@@ -38,10 +40,14 @@ Shared Codex skills, templates, and setup notes for Scrum Master / TPM Jira work
    T3 List followup for FIJI-12345, MTR-67890
    ```
 
+   ```text
+   JIRA Quarter Planning for 2026Q3, dry-run only
+   ```
+
 ## Sharing Rules
 
 - Do not commit Jira tokens, cookies, personal API keys, or exported customer data.
 - Use `config/*.example.json` for team-specific defaults.
 - Keep personal saved filters or spreadsheets in local config unless the whole SM team should use them.
 - Dry-run before any workflow that writes to Jira, Sheets, or saved filters.
-
+- For quarterly INIT work, configure team scope and owner mapping locally before live Jira updates.

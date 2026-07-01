@@ -1,0 +1,4 @@
+interface:
+  display_name: "Jira Quarterly Init"
+  short_description: "Generate recurring quarterly Jira epics and tasks"
+  default_prompt: "Use $jira-quarterly-init to prepare this quarter's recurring Jira init epics and tasks from the template."

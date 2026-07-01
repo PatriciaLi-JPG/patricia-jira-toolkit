@@ -9,6 +9,7 @@ Windows PowerShell:
 ```powershell
 Copy-Item -Recurse .\skills\release-story-points-report $env:USERPROFILE\.codex\skills\
 Copy-Item -Recurse .\skills\t3-list-followup $env:USERPROFILE\.codex\skills\
+Copy-Item -Recurse .\skills\jira-quarterly-init $env:USERPROFILE\.codex\skills\
 ```
 
 macOS / Linux:
@@ -16,6 +17,7 @@ macOS / Linux:
 ```bash
 cp -R skills/release-story-points-report ~/.codex/skills/
 cp -R skills/t3-list-followup ~/.codex/skills/
+cp -R skills/jira-quarterly-init ~/.codex/skills/
 ```
 
 Start a new Codex thread after copying so the skill list refreshes.
@@ -29,6 +31,7 @@ Suggested local-only files:
 - `config/team-mapping.local.json`
 - `config/jira-fields.local.json`
 - `config/sources.local.json`
+- `config/quarterly-init.local.json`
 
 ## Verify
 
@@ -44,3 +47,8 @@ or:
 T3 List followup for FIJI-12345
 ```
 
+or:
+
+```text
+JIRA Quarter Planning for 2026Q3, dry-run only
+```

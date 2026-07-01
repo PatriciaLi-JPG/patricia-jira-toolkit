@@ -1,0 +1,43 @@
+{
+  "jiraBaseUrl": "https://jira.example.com",
+  "canonicalInitTemplate": {
+    "issueKey": "INIT-12345",
+    "url": "https://jira.example.com/browse/INIT-12345"
+  },
+  "editableProjects": ["PROJ"],
+  "externalProjects": ["EXT"],
+  "teamFieldJql": "cf[12345]",
+  "inScopeTeams": [
+    "Team-A",
+    "Team-B"
+  ],
+  "outOfScopeTeams": [
+    "Other-Team"
+  ],
+  "quarterDateWindows": {
+    "2026Q3": {
+      "targetStart": "2026-07-01",
+      "targetEnd": "2026-09-30"
+    }
+  },
+  "fixVersionPatterns": {
+    "Team-A": "Product 26.3.{releaseTrain}",
+    "Team-B": "Platform 26.3.{releaseTrain}"
+  },
+  "ownerFallbacks": {
+    "Team-A": {
+      "assignee": "user.name",
+      "team": "Team-A"
+    }
+  },
+  "estimatePolicy": {
+    "qaFromDevRatio": 0.5,
+    "applyOnlyWhenUserConfirms": true
+  },
+  "safety": {
+    "dryRunBeforeBulkUpdate": true,
+    "bulkUpdateThreshold": 5,
+    "doNotOverwriteNonEmptyTeam": true,
+    "doNotChangeStatusWithoutExplicitRequest": true
+  }
+}

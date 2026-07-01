@@ -1,0 +1,8 @@
+{
+  "canonical_init_template": {
+    "issue_key": "INIT-12345",
+    "url": "https://jira.example.com/browse/INIT-12345",
+    "base_url": "https://jira.example.com",
+    "notes": "Example placeholder. Replace this file locally with your team's canonical quarterly INIT template. Do not commit private Jira URLs unless the repo is approved for that audience."
+  }
+}

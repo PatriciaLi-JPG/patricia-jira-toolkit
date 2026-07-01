@@ -1,0 +1,58 @@
+{
+  "defaults": {
+    "project_key": "PROJ",
+    "issue_type_names": {
+      "epic": "Epic",
+      "task": "Task"
+    },
+    "labels": [
+      "quarterly-init"
+    ],
+    "components": [
+      "Planning"
+    ],
+    "priority": "Medium"
+  },
+  "epics": [
+    {
+      "id": "quarter-planning",
+      "summary": "{{quarter_human}} Quarterly Planning Init",
+      "epic_name": "{{quarter_human}} Planning",
+      "description": "Initialize team planning work for {{quarter_human}}.\n\nAcceptance criteria:\n- Scope is reviewed with engineering and product.\n- Recurring dependencies are confirmed.\n- Child tasks are completed or explicitly deferred.",
+      "tasks": [
+        {
+          "id": "review-carryover",
+          "summary": "{{quarter_human}} review carryover items",
+          "description": "Review unresolved items from the previous quarter and decide whether each item should move into {{quarter_human}}, be closed, or be split.",
+          "story_points": 2
+        },
+        {
+          "id": "confirm-roadmap",
+          "summary": "{{quarter_human}} confirm roadmap scope",
+          "description": "Confirm quarter roadmap scope with product, support, and operations stakeholders.",
+          "story_points": 3
+        }
+      ]
+    },
+    {
+      "id": "operational-readiness",
+      "summary": "{{quarter_human}} Operational Readiness Init",
+      "epic_name": "{{quarter_human}} Ops Readiness",
+      "description": "Prepare recurring operational readiness checks for {{quarter_human}}.",
+      "tasks": [
+        {
+          "id": "monitoring-review",
+          "summary": "{{quarter_human}} review monitoring and alerts",
+          "description": "Review dashboard coverage, alert thresholds, ownership, and runbook links for core services.",
+          "story_points": 3
+        },
+        {
+          "id": "capacity-check",
+          "summary": "{{quarter_human}} complete capacity check",
+          "description": "Check expected traffic, platform constraints, capacity, and high-availability assumptions for the quarter.",
+          "story_points": 5
+        }
+      ]
+    }
+  ]
+}
